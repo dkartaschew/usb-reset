@@ -1,0 +1,16 @@
+usbreset
+
+Requirements:
+-------------
+
+libusb
+
+Installation.
+-------------
+
+Typically, a user can:
+$ ./configure
+$ make
+# make install
+
+And usbreset will be installed into /usr/local/
