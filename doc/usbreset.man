@@ -1,0 +1,37 @@
+.\" Manpage for usbrest
+.TH man 1 "15 Jan 2020" "1.0" "usbreset man page"
+.SH NAME
+usbreset \- reset USB device
+.SH SYNOPSIS
+usbreset [ald]
+.SH DESCRIPTION
+usbreset is a simple utility to reset a USB device.
+.SH OPTIONS
+.IP -l
+List all USB devices.
+.IP -a
+Reset all non Hub USB devices found.
+.IP -d VID:PID
+Reset the device as given by the VID:PID. Values 
+.B must
+in hexidecimal.
+.IP -h
+Display usage/help.
+.SH EXAMPLES
+.TP
+.BI usbreset\ \-l 
+.TP
+.PP
+List all USB devices.
+.TP
+.BI usbreset\ \-d \ 1234:4f87
+.TP
+.PP
+Request a reset of the device with VID:PID '1234:4f87'.
+.SH SEE ALSO
+lsusb(8) 
+.SH BUGS
+May require root access to perform device reset depending on user permissions 
+and udev setup.
+.SH AUTHOR
+Darran Kartaschew (darran.kartaschew@outlook.com)
