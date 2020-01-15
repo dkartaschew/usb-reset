@@ -20,6 +20,7 @@ Examples.
 * ```# usbreset -a``` to reset all non Hub devices.
 * ```# usbreset -d 13d3:5702``` to reset the device with VID:PID 13d3:5702.
 
+### Notes
 
 Source code formatting:
 ```$ astyle -A14 -T -p -xg -H -xe -k1 -W3 -j -xC120 -z2 *.c ```
